@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Number Between A Given Range</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number Game</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
     <div class="container">
-        <h3>I am thinking of a number Between 1 - 100.</h3>
-        <h3>Can you guess it?</h3>
-
-
-        <input type="text" placeholder="Num" id="guess"><br>
-        <button onclick="play()" id="my_btn">Guess</button>
-
-
-
-
-        <p id="message1">No. Of Guesses: 0</p>
-        <p id="message2">Guessed Numbers are: None</p>
-        <p id="message3"></p>
+      <div id="game">
+        <h3>
+          I am thinking of a number between 1-100.<br />
+          Can you guess it?
+        </h3>
+        <div class="input-wrapper">
+          <input type="number" placeholder="00" id="guess" />
+          <button id="check-btn">Guess</button>
+        </div>
+        <p id="no-of-guesses">No. Of Guesses: 0</p>
+        <p id="guessed-nums">Guessed Numbers are: None</p>
+      </div>
+      <button id="restart">Restart</button>
+      <div class="result">
+        <div id="hint"></div>
+      </div>
     </div>
-
-
-
+    <!-- Script -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
