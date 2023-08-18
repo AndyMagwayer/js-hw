@@ -5,9 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Number Between A Given Range</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="container">
+        <h3>I am thinking of a number Between 1 - 100.</h3>
+        <h3>Can you guess it?</h3>
+
+
+        <input type="text" placeholder="Num" id="guess"><br>
+        <button onclick="play()" id="my_btn">Guess</button>
+
+
+
+
+        <p id="message1">No. Of Guesses: 0</p>
+        <p id="message2">Guessed Numbers are: None</p>
+        <p id="message3"></p>
+    </div>
+
+
+
     <script src="script.js"></script>
 </body>
 </html>
